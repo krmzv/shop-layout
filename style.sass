@@ -22,6 +22,7 @@ nav
   align-items: center
   justify-content: space-between
 
+
 .subnav
   height: 60px
   width: 100%
@@ -32,6 +33,10 @@ nav
   max-width: 150px
   width: 150px
 
+  @media (max-width: 640px)
+    width: 120px
+    max-width: 120px
+
 .buttons-container
   padding-right: 30px
   min-width: 200px
@@ -40,6 +45,9 @@ nav
   align-items: center
   justify-content: space-between
 
+  @media (max-width: 640px)
+    max-width: 250px
+
 .button
   height: 40px
   min-width: 80px
@@ -47,17 +55,26 @@ nav
   text-transform: uppercase
   font-weight: 500
 
+  @media (max-width: 60px)
+    min-width: 60px
+
 .button__prim
   border: 1px solid $green
   background-color: $green
   width: 250px
   color: white
 
+  @media (max-width: 640px)
+    width: 160px
+
 .button__sec
   border: 1px solid $blue
   background-color: white
   width: 80px
   color: $blue
+
+  @media (max-width: 640px)
+    width: 60px
 
 main
   margin-top: 150px
@@ -103,7 +120,7 @@ a
   @media (max-width: 700px)
     font-size: 12px
     margin-top: 0
-    margin-left: 10px
+    margin-left: 20px
   
 
 

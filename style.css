@@ -32,6 +32,12 @@ nav {
   max-width: 150px;
   width: 150px;
 }
+@media (max-width: 640px) {
+  .logo-container {
+    width: 120px;
+    max-width: 120px;
+  }
+}
 
 .buttons-container {
   padding-right: 30px;
@@ -41,6 +47,11 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 640px) {
+  .buttons-container {
+    max-width: 250px;
+  }
+}
 
 .button {
   height: 40px;
@@ -49,6 +60,11 @@ nav {
   text-transform: uppercase;
   font-weight: 500;
 }
+@media (max-width: 60px) {
+  .button {
+    min-width: 60px;
+  }
+}
 
 .button__prim {
   border: 1px solid #08c299;
@@ -56,12 +72,22 @@ nav {
   width: 250px;
   color: white;
 }
+@media (max-width: 640px) {
+  .button__prim {
+    width: 160px;
+  }
+}
 
 .button__sec {
   border: 1px solid #0060ca;
   background-color: white;
   width: 80px;
   color: #0060ca;
+}
+@media (max-width: 640px) {
+  .button__sec {
+    width: 60px;
+  }
 }
 
 main {
@@ -119,7 +145,7 @@ a {
   a {
     font-size: 12px;
     margin-top: 0;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 }
 
