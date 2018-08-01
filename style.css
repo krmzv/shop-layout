@@ -2,12 +2,103 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial;
+  overflow: hidden;
 }
 
 nav {
   min-width: 100%;
   height: 60px;
+  background-color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subnav {
+  height: 60px;
+  width: 100%;
+  background: linear-gradient(#e2e2e2, #f9f9f9);
+}
+
+.logo-container {
+  padding-left: 30px;
+  max-width: 150px;
+  width: 150px;
+}
+
+.buttons-container {
+  padding-right: 30px;
+  min-width: 200px;
+  width: 350px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  height: 40px;
+  min-width: 80px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.button__prim {
+  border: 1px solid #08c299;
+  background-color: #08c299;
+  width: 250px;
+  color: white;
+}
+
+.button__sec {
+  border: 1px solid #0060ca;
+  background-color: white;
+  width: 80px;
+  color: #0060ca;
+}
+
+main {
+  padding-top: 40px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+aside {
+  padding-left: 30px;
+  width: 250px;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease;
+  color: grey;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.grid {
+  margin-right: 30px;
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 270px 270px 270px;
+  row-gap: 20px;
+  column-gap: 40px;
+  min-height: 1200px;
+  height: 1200px;
+  max-height: 1600px;
+  overflow-y: scroll;
+}
+
+.card {
+  border-radius: 5px;
   background-color: black;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
